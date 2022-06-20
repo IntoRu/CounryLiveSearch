@@ -1,29 +1,3 @@
-
-
-const people = [
-    { 'name': 'david' },
-    { 'name': 'patel' },
-    { 'name': 'kevin' },
-    { 'name': 'steven' },
-    { 'name': 'coco' },
-    { 'name': 'brock' },
-    { 'name': 'rock' }
-]
-
-//-----------------------------------------------------------------------------------------
-const auto = [
-    { name: 'mersedes' },
-    { name: 'bmw' },
-    { name: 'audi' },
-    { name: 'ford' },
-    { name: 'reno' },
-    { name: 'volvo' },
-    { name: 'opel' },
-    { name: 'lotus' },
-    { name: 'lexus' },
-]
-
-//------------------------------------------------------------------------------------------
 let country = [
     {
         "name": "Afghanistan",
