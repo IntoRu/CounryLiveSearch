@@ -56,9 +56,9 @@ function liveSearch(data) {
     searchInput.addEventListener('input', (event) => {
         let value = event.target.value
         if (value && value.trim().length > 0) {
-            value = value.trim().toLowerCase()
+            value = value.trim().toUpperCase()
             setList(data.filter(person => {
-                return person.name.includes(value)
+                return person.name.toUpperCase().includes(value)
             }).sort((personA, personB) => {
                 return getRelevancy(personB.name, value) - getRelevancy(personA.name, value)
             }))
@@ -83,4 +83,4 @@ function liveSearch(data) {
     }
 }
 
-liveSearch(autoNew)
+liveSearch(people)

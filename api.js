@@ -1,59 +1,13 @@
-const autoNew = [
-    {
-        name: 'mersedes',
-        year: 2001,
-        coutry: 'russia'
-    },
-    {
-        name: 'bmw',
-        year: 2001,
-        coutry: 'argentina'
-    },
-    {
-        name: 'audi',
-        year: 2001,
-        coutry: 'ukraina'
-    },
-    {
-        name: 'ford',
-        year: 2001,
-        coutry: 'belarus'
-    },
-    {
-        name: 'reno',
-        year: 2001,
-        coutry: 'africa'
-    },
-    {
-        name: 'volvo',
-        year: 2001,
-        coutry: 'angola'
-    },
-    {
-        name: 'opel',
-        year: 2001,
-        coutry: 'efiopia'
-    },
-    {
-        name: 'lotus',
-        year: 2001,
-        coutry: 'angliya'
-    },
-    {
-        name: 'lexus',
-        year: 2001,
-        coutry: 'gernany'
-    },
-]
+
 
 const people = [
-    { name: 'david' },
-    { name: 'patel' },
-    { name: 'kevin' },
-    { name: 'steven' },
-    { name: 'coco' },
-    { name: 'brock' },
-    { name: 'rock' }
+    { 'name': 'david' },
+    { 'name': 'patel' },
+    { 'name': 'kevin' },
+    { 'name': 'steven' },
+    { 'name': 'coco' },
+    { 'name': 'brock' },
+    { 'name': 'rock' }
 ]
 
 //-----------------------------------------------------------------------------------------
