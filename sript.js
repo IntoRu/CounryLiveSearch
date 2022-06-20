@@ -83,4 +83,4 @@ function liveSearch(data) {
     }
 }
 
-liveSearch(people)
+liveSearch(country)
