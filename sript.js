@@ -76,7 +76,7 @@ function liveSearch(data) {
         let spisok = Array.from(document.querySelectorAll('.item'))
         spisok.forEach(el => {
             el.addEventListener('click', (e) => {
-                console.log(e.target.textContent)
+                // console.log(e.target.textContent)
                 searchInput.value = e.target.textContent
                 clearList()
 
@@ -87,5 +87,11 @@ function liveSearch(data) {
 
 liveSearch(country)
 btn.addEventListener('click', () => {
-    div.innerHTML = searchInput.value
+    country.forEach(el => {
+        // console.log(el.flag)
+        if (searchInput.value === el.name) {
+            div.innerHTML = el.flag
+        }
+    })
+    searchInput.value = ''
 })
