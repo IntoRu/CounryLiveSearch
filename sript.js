@@ -1,7 +1,8 @@
-const searchInput = document.getElementById('search')
+const searchInput = document.querySelector('input')
 const list = document.getElementById('list')
-let btn = document.querySelector('button')
-let div = document.querySelector('div')
+const btn = document.querySelector('button')
+const div = document.querySelector('div')
+const img = document.querySelector('.nameImg')
 // -----------------------------------------------------------
 
 function liveSearch(data) {
@@ -56,6 +57,7 @@ function liveSearch(data) {
     // const searchInput = document.getElementById('search')
 
     searchInput.addEventListener('input', (event) => {
+        img.src = ""
         let value = event.target.value
         if (value && value.trim().length > 0) {
             value = value.trim().toUpperCase()
@@ -70,8 +72,6 @@ function liveSearch(data) {
         }
     })
 
-    //---------------------------
-
     function touchSpisok() {
         let spisok = Array.from(document.querySelectorAll('.item'))
         spisok.forEach(el => {
@@ -85,12 +85,13 @@ function liveSearch(data) {
     }
 }
 
+// -----------------------------------------------
 liveSearch(country)
 btn.addEventListener('click', () => {
     country.forEach(el => {
         // console.log(el.flag)
         if (searchInput.value === el.name) {
-            div.innerHTML = el.flag
+            img.src = el.flag
         }
     })
     searchInput.value = ''

@@ -1,5 +1,74 @@
-div {
-    width: 300px;
-    height: 50px;
-    border: 1px solid black;
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #FFF;
+    background-color: #9d9d9f;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+}
+
+#new-task-form {
+    display: flex;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+
+#new-task-submit {
+    color: rgb(2, 2, 2);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+
+
+
+.nameDiv {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+
+}
+
+.nameImg {
+    width: 100%;
+    object-fit: contain;
+
 }
