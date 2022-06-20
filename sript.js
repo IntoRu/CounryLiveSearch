@@ -1,9 +1,11 @@
-
+const searchInput = document.getElementById('search')
+const list = document.getElementById('list')
+let btn = document.querySelector('button')
+let div = document.querySelector('div')
 // -----------------------------------------------------------
 
 function liveSearch(data) {
-    const searchInput = document.getElementById('search')
-    const list = document.getElementById('list')
+
 
     function setList(group) {
         clearList()
@@ -84,3 +86,6 @@ function liveSearch(data) {
 }
 
 liveSearch(country)
+btn.addEventListener('click', () => {
+    div.innerHTML = searchInput.value
+})
