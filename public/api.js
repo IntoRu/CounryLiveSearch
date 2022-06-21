@@ -2067,7 +2067,7 @@ const country = [
         "phone": "86",
         "population": 1378665000,
         "media": {
-            "flag": "https:27s_Republic_of_China.svg/1280px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+            "flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXSUM7qmtKOX32E38DXesXZ5u4HbPuT0Atj7i-9q6uU71NTs4vTMR1-u8_fJ4tcBSPFE&usqp=CAU",
             "emblem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/National_Emblem_of_the_People%27s_Republic_of_China_%282%29.svg/1280px-National_Emblem_of_the_People%27s_Republic_of_China_(2).svg.png",
             "orthographic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/CHN_orthographic.svg/221280px-CHN_orthographic.svg.png"
         },
