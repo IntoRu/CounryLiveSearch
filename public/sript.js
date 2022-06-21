@@ -3,6 +3,7 @@ const list = document.getElementById('list')
 const btn = document.querySelector('button')
 const div = document.querySelector('div')
 const img = document.querySelector('.nameImg')
+const infoDiv = document.querySelector('.infoDiv')
 // -----------------------------------------------------------
 
 function liveSearch(data) {
@@ -58,6 +59,7 @@ function liveSearch(data) {
 
     searchInput.addEventListener('input', (event) => {
         img.src = ""
+        infoDiv.innerHTML = ''
         let value = event.target.value
         if (value && value.trim().length > 0) {
             value = value.trim().toUpperCase()
@@ -91,7 +93,17 @@ btn.addEventListener('click', () => {
     country.forEach(el => {
         // console.log(el.flag)
         if (searchInput.value === el.name) {
-            img.src = el.flag
+            img.src = el.media.flag
+
+            //------------------
+            let info = `
+            <p>Abbreviation - ${el.abbreviation}<p>
+                <p>Capital - ${el.capital}<p>
+                <p>Currency - ${el.currency}<p>
+                <p>Phone - ${el.phone}<p>
+                <p>Population - ${el.population}<p>
+            `
+            infoDiv.innerHTML = info
         }
     })
     searchInput.value = ''

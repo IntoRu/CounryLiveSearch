@@ -16,13 +16,13 @@ body {
 h1 {
     text-align: center;
     color: black;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #new-task-form {
     display: flex;
     margin: 10px;
-    margin-top: 30px;
+
 
 }
 
@@ -37,11 +37,12 @@ button {
 }
 
 #new-task-input {
-    flex: 1 1 0%;
+    flex: 0.9 1 0%;
     background-color: black;
     padding: 1rem;
     border-radius: 1rem;
-    margin-right: 1rem;
+    margin-right: 10px;
+    margin-left: 23px;
     color: white;
     font-size: 1.25rem;
 }
@@ -54,21 +55,30 @@ button {
     transition: 0.4s;
 }
 
-
-
-
 .nameDiv {
-    flex: 1 1 0%;
-    max-width: 800px;
+    flex: 0 1 0%;
+    /* max-width: 800px; */
     width: 95%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
 
+}
 
+.infoDiv {
+    flex: 5 1 0%;
+    width: 77%;
+    margin: 0 auto;
+    max-height: 100px;
+    margin-top: 20px;
 }
 
 .nameImg {
     width: 100%;
     object-fit: contain;
+    height: 200px;
 
+}
+
+p {
+    color: black;
 }
