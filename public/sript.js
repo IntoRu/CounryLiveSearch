@@ -58,7 +58,7 @@ function liveSearch(data) {
     // const searchInput = document.getElementById('search')
 
     searchInput.addEventListener('input', (event) => {
-        img.src = ""
+        img.src = "https://flaglab.ru/uploads/5ac891fd437a1doc1301297432/5ac898cc184e2.svg"
         infoDiv.innerHTML = ''
         let value = event.target.value
         if (value && value.trim().length > 0) {
